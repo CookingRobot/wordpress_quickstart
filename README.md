@@ -1,7 +1,9 @@
 ## quickstart_wordpress_theme
 
-Quickstart template for creating wordpress themes.
+*Quickstart Wordpress Theme*
 
-### Installation
+### Usage
 
-+ styles/stylesheet_meta.css
++ Edit `styles/stylesheet_meta.css` and add name, description and author
++ Modify the SASS files at `styles/sass/*.sass`
++ run `$ gulp` to compile sass-files to the minified `/styles.css`
