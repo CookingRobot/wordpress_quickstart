@@ -1,0 +1,68 @@
+/*** GLOBAL : GENERAL STYLE DEFAULTS ***/
+@font-face {
+  src: url("./fonts/opensans-regular-webfont.eot");
+  src: url("./fonts/opensans-regular-webfont.eot?#iefix") format("embedded-opentype"), url("./fonts/opensans-regular-webfont.woff2") format("woff2"), url("./fonts/opensans-regular-webfont.woff") format("woff"), url("./fonts/opensans-regular-webfont.ttf") format("truetype"), url("./fonts/opensans-regular-webfont.svg#open_sansregular") format("svg");
+  font-family: 'Open Sans';
+  font-weight: 400;
+  font-style: normal; }
+
+/************init***********/
+html {
+  margin: 0;
+  padding: 0; }
+
+body {
+  color: red; }
+
+[nounderline] {
+  text-decoration: none; }
+
+/********** Page Style - Global *********/
+.pageStyle {
+  font-size: 0.95em; }
+  .pageStyle h1, .pageStyle h2 {
+    color: #A80319;
+    font-weight: 700;
+    margin: 0.5em 0px 0.7em 0px; }
+  .pageStyle h3, .pageStyle h4, .pageStyle h5, .pageStyle h6 {
+    font-weight: 700;
+    margin: 1em 0px 0.5em 0px; }
+  .pageStyle p {
+    margin: 0.5em 0px 0.5em 0px; }
+  .pageStyle img, .pageStyle video {
+    max-width: 100%;
+    height: auto; }
+  .pageStyle iframe {
+    max-width: 100%; }
+  .pageStyle .alignright {
+    padding: 8px 0 10px 8px;
+    float: right; }
+  .pageStyle .alignleft {
+    padding: 8px 10px 8px 0;
+    float: left; }
+  .pageStyle .aligncenter {
+    margin: 0px auto;
+    display: block; }
+
+/* image caption */
+.wp-caption-text, .wp-caption-dt, .wp-caption-dd {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  text-align: left;
+  font-size: 90%;
+  font-weight: 600; }
+
+.wp-caption-dt, .wp-caption-dd, .wp-caption-text {
+  padding-right: 10px; }
+
+.aligncenter .wp-caption-text, .aligncenter .wp-caption-dt, .aligncenter .wp-caption-dd {
+  text-align: center; }
+
+.alignleft .wp-caption-text, .alignleft .wp-caption-dt, .alignleft .wp-caption-dd {
+  text-align: left; }
+
+.alignright .wp-caption-text, .alignright .wp-caption-dt, .alignright .wp-caption-dd {
+  text-align: right; }
+
+/********** HEADER & MENU *********/
+/*****************MOBILE************/

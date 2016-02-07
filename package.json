@@ -1,0 +1,14 @@
+{
+  "name": "quickstart_theme",
+  "version": "1.0.0",
+  "description": "wordpress theme",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "*",
+    "gulp-sass": "*",
+    "gulp-autoprefixer":"*",
+    "gulp-cssmin":"*",
+    "gulp-insert":"*",
+    "gulp-notify":"*"
+  }
+}
