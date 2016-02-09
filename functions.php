@@ -3,6 +3,14 @@
 add_image_size('custom_size',260,260);
 add_theme_support( 'menus' );
 
+
+/*set maximum file size*/
+@ini_set( 'upload_max_size' , '64M' );
+@ini_set( 'post_max_size', '64M');
+@ini_set( 'max_execution_time', '300' );
+
+
+
 function get_page_number() {
     if ( get_query_var('paged') ) {print ' | ' . __( 'Page ' , 'quickstart_theme') . get_query_var('paged');}
 } 
