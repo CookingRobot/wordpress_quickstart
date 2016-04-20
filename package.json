@@ -9,6 +9,7 @@
     "gulp-autoprefixer":"*",
     "gulp-cssmin":"*",
     "gulp-insert":"*",
-    "gulp-notify":"*"
+    "gulp-notify":"*",
+    "gulp-livereload":"*"
   }
 }

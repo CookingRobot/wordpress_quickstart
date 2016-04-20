@@ -3,6 +3,7 @@ var sass = require('gulp-sass');
 var prefix = require('gulp-autoprefixer');
 var cssmin = require('gulp-cssmin');
 var insert = require('gulp-insert');
+var livereload = require('gulp-livereload');
 var fs = require("fs");
 var metaStyle = "";
 
@@ -24,11 +25,13 @@ gulp.task('sass', function () {
     .pipe(gulp.dest(outputDebug))
     .pipe(cssmin())
     .pipe(insert.prepend(metaStyle))
-    .pipe(gulp.dest(output));
+    .pipe(gulp.dest(output))
+    .pipe(livereload());
 });
 
 
 gulp.task('watch', function() {
+    livereload.listen();
   return gulp
     .watch(input, ['sass'])
 });
