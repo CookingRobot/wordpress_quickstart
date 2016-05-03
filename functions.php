@@ -9,6 +9,9 @@ add_theme_support( 'menus' );
 @ini_set( 'post_max_size', '64M');
 @ini_set( 'max_execution_time', '300' );
 
+//disable toolbar for alls users
+show_admin_bar(false);
+add_filter('show_admin_bar', '__return_false');
 
 
 function get_page_number() {
