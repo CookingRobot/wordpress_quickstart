@@ -1,5 +1,5 @@
 <footer>
-<hr><p>Footer Content</p>
+	<p>Footer Content</p>
 </footer>
 
 <?php
