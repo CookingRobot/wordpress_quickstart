@@ -1,5 +1,5 @@
 var gulp = require('gulp');
-var sass = require('gulp-sass');
+var scss = require('gulp-sass');
 var prefix = require('gulp-autoprefixer');
 var cssmin = require('gulp-cssmin');
 var insert = require('gulp-insert');
@@ -8,14 +8,14 @@ var fs = require("fs");
 var metaStyle = "";
 
 
-var input = './styles/sass/*';
+var input = './styles/scss/*';
 var output = './';
 var outputDebug = './styles/';
 
-gulp.task('sass', function () {
+gulp.task('scss', function () {
   return gulp
     .src(input)
-    .pipe(sass({
+    .pipe(scss({
         onError: function(err) {return notify().write(err);}
         }))
     .pipe(prefix({
@@ -33,7 +33,7 @@ gulp.task('sass', function () {
 gulp.task('watch', function() {
     livereload.listen();
   return gulp
-    .watch(input, ['sass'])
+    .watch(input, ['scss'])
 });
 gulp.task('init',function() {
     metaStyle = fs.readFileSync("./styles/stylesheet_meta.css", "utf-8");
@@ -41,5 +41,5 @@ gulp.task('init',function() {
     return gulp;
 });
 
-gulp.task('build', ['init', 'sass'])
-gulp.task('default', ['init','sass', 'watch']);
+gulp.task('build', ['init', 'scss'])
+gulp.task('default', ['init','scss', 'watch']);
