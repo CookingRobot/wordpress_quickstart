@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <?php
-	$args = array( 'posts_per_page' => -1,
+	$args = array( 'posts_per_page' => get_option('posts_per_page'),
     'orderby' => 'date' ,
     'order' => 'DESC');
 	$loop = new WP_Query($args);

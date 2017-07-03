@@ -41,5 +41,5 @@ gulp.task('init',function() {
     return gulp;
 });
 
-
+gulp.task('build', ['init', 'sass'])
 gulp.task('default', ['init','sass', 'watch']);
